@@ -47,6 +47,7 @@ pipeline {
     // some block
                   }
                 sh ('export KUBERNETES_MASTER=10.1.2.3:8080')
+                sh ('sudo su')
                 sh ('kubectl apply -f karthick1ktcs/train-schedule')
                 //kubernetesDeploy(
                   //  kubeconfigId: 'kubeconfig',
